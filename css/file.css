@@ -1,0 +1,57 @@
+#main {
+text-align:center;
+margin-top:5cm;
+}
+
+#btn_game {
+   position:absolute;
+   margin-top:-0.5cm;
+   margin-left:1cm;
+   border: 3px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #65a9d7, #65a9d7);
+   background: -moz-linear-gradient(top, #65a9d7, #65a9d7);
+   background: -ms-linear-gradient(top, #65a9d7, #65a9d7);
+   background: -o-linear-gradient(top, #65a9d7, #65a9d7);
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #65a9d7 100%);
+   padding: 13px 26px;
+   -webkit-border-radius: 17px;
+   -moz-border-radius: 17px;
+   border-radius: 17px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #1e4158 0 1px 0;
+   color: #1313f0;
+   font-size: 17px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+#btn_game:hover {
+   border: 3px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65a9d7), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #65a9d7, #65a9d7);
+   background: -moz-linear-gradient(top, #65a9d7, #65a9d7);
+   background: -ms-linear-gradient(top, #65a9d7, #65a9d7);
+   background: -o-linear-gradient(top, #65a9d7, #65a9d7);
+   background-image: -ms-linear-gradient(top, #65a9d7 0%, #65a9d7 100%);
+   color: #ffffff;
+}
+
+#btn_game:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 3px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+   color: #fff;
+   }
