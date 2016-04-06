@@ -10,10 +10,10 @@ var c,
     i,
     game = false,
     img1,
-    img2,
+    img2;
 
 
-    img1 = document.createElement("IMG");
+img1 = document.createElement("IMG");
 img1.src = "images/player_1.jpg";
 img1.alt = "player_1";
 
