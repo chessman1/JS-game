@@ -6,22 +6,26 @@ var c,
     theCanvas,
     turn = 0,
     squaresFilled = 0,
-    message = "",
     i,
     game = false,
     img1,
-    img2;
+    img2,
+    counter = 0;
 
+if (typeof Storage !== "undefined") {
+    localStorage.cats = 0;
+    localStorage.dogs = 0;
+}
 
-img1 = document.createElement("IMG");
+img1 = document.createElement("img");
 img1.src = "images/player_1.jpg";
 img1.alt = "player_1";
 
-img2 = document.createElement("IMG");
+img2 = document.createElement("img");
 img2.src = "images/player_2.jpg";
 img2.alt = "player_2";
 
-for (var i = 0; i < 9; ++i) {
+for (i = 0; i < 9; ++i) {
     painted[i] = false;
     content[i] = "";
 }
@@ -30,6 +34,7 @@ function makeMove(number) {
     theCanvas = "canvas" + number;
     c = document.getElementById(theCanvas);
     ctx = c.getContext('2d');
+
 
     if (!painted[number - 1]) {
         if (!game) {
@@ -67,6 +72,11 @@ function checkWinner(symbol) {
     if (content[0] == symbol && content[1] == symbol && content[2] == symbol) {
         alert("The player with " + symbol + " WON!");
         game = true;
+        if (symbol == "Cats") {
+            document.getElementById('resultCats').innerHTML = Number(localStorage.cats) + 1;
+        } else {
+            document.getElementById('resultDogs').innerHTML = Number(localStorage.dogs) + 1;
+        }
     } else if (content[3] == symbol && content[4] == symbol && content[5] == symbol) {
         alert("The player with " + symbol + " WON!");
         game = true;
